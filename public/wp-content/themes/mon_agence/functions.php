@@ -146,3 +146,15 @@ function agence_equipe_custom_post() {
 add_action('init', 'agence_realisations_custom_post', 0);
 add_action('init', 'agence_services_custom_post', 0);
 add_action('init', 'agence_equipe_custom_post', 0);
+
+
+add_filter( 'jpeg_quality', 'my_prefix_regenerate_thumbnail_quality'); function my_prefix_regenerate_thumbnail_quality() {
+    return 100; };
+
+// if (function_exists("add_image_size")) {
+//     add_image_size()
+// };
+
+if (function_exists("add_theme_support")) {
+    add_theme_support( 'post-thumbnails');
+};
