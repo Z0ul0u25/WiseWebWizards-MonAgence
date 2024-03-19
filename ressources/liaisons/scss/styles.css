@@ -797,14 +797,4 @@ body {
   background: linear-gradient(180deg, #7600AD 0%, #C95DFB 60%);
 }
 
-.article__top {
-  display: grid;
-  grid-template-columns: auto auto;
-  color: #fff;
-}
-
-figcaption {
-  text-align: center;
-}
-
 /*# sourceMappingURL=styles.css.map */
