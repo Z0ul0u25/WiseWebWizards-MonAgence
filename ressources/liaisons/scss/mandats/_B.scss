@@ -2,3 +2,13 @@
 .b_page{
 	background: $gradientMauve;
 }
+
+.article__top{
+	display: grid;
+	grid-template-columns: auto auto;
+	color: #fff;
+}
+
+figcaption{
+	text-align: center;
+}
