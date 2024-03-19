@@ -3,7 +3,7 @@
 	background: $gradientMauve;
 }
 
-.article__top{
+.b_article__top{
 	display: grid;
 	grid-template-columns: auto auto;
 	color: #fff;
@@ -11,4 +11,5 @@
 
 figcaption{
 	text-align: center;
+	font-weight: bold;
 }

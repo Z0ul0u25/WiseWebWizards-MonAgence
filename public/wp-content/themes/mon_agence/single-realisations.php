@@ -14,7 +14,7 @@ echo "single-realisation.php";
 		</header>
 
 
-		<div class="article__top">
+		<div class="b_article__top">
 
 			<?php
 
