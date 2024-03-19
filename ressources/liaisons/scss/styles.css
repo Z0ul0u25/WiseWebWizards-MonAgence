@@ -455,7 +455,6 @@ th {
   position: absolute;
   width: 1px;
 }
-
 .visuallyhidden.focusable:active, .visuallyhidden.focusable:focus,
 .screen-reader-only.focusable:active,
 .screen-reader-only.focusable:focus {
@@ -487,7 +486,6 @@ body {
   font-size: 1.6pxrem;
   line-height: 1.375; /* facteur multiplicateur de la taille de la police 1.375x16=22 */
 }
-
 h1,
 .titreNiveau1,
 h2,
@@ -504,7 +502,6 @@ h1,
   font-size: 2.8pxrem;
   margin: 0;
 }
-
 h1--desktop,
 .titreNiveau1--desktop {
   font-size: 48px;
@@ -512,7 +509,6 @@ h1--desktop,
   padding-bottom: 15px;
   position: relative;
 }
-
 h1--desktop:after,
 .titreNiveau1--desktop:after {
   background-color: #000;
@@ -531,7 +527,6 @@ h2,
   font-size: 2pxrem;
   text-transform: uppercase;
 }
-
 h2--desktop,
 .titreNiveau2--desktop {
   font-size: 28px;
@@ -543,7 +538,6 @@ h3,
   font-size: 18px;
   font-size: 1.8pxrem;
 }
-
 h3--desktop,
 .titreNiveau3--desktop {
   font-size: 22px;
@@ -556,7 +550,6 @@ h3--desktop,
   font-size: 1.6pxrem;
   line-height: 1.375;
 }
-
 .texte--desktop {
   line-height: 1.5;
 }
@@ -570,16 +563,13 @@ h3--desktop,
   color: #008800;
   text-decoration: none;
 }
-
 .hyperlien--visited {
   color: #006f00;
 }
-
 .hyperlien--hover {
   color: #002200;
   text-decoration: underline;
 }
-
 .hyperlien--active {
   color: #F2E4F9;
   text-decoration: underline;
@@ -597,29 +587,23 @@ h3--desktop,
   padding: 0.5em 1em;
   text-decoration: none;
 }
-
 .bouton:after {
   content: "»";
   margin-left: 0.4em;
 }
-
 .bouton--hover {
   background-color: rgba(118, 0, 173, 0.75);
 }
-
 .bouton--active {
   background-color: rgba(118, 0, 173, 0.5);
 }
-
 .bouton--inverse {
   background-color: white;
   border: 2px solid #7600AD;
 }
-
 .bouton--inverse--hover {
   border-color: rgba(118, 0, 173, 0.75);
 }
-
 .bouton--inverse--active {
   border-color: rgba(118, 0, 173, 0.5);
 }
@@ -645,7 +629,6 @@ body {
   float: left;
   width: 100%;
 }
-
 @media only screen and (max-width: 735px) {
   .page {
     float: none;
@@ -653,6 +636,7 @@ body {
     border-bottom: 1px solid #333;
   }
 }
+
 /****** MODULES ******/
 /** menu **/
 /**
@@ -674,22 +658,18 @@ body {
   max-width: 960px;
   margin: 0 auto;
 }
-
 .navigation__controle {
   background-color: #d9d7d0;
   border: none;
   padding: 10px;
   min-width: 40px;
 }
-
 .navigation__controle:hover {
   background-color: #f5ae09;
 }
-
 .navigation__controle:active {
   background-color: #f1acb1;
 }
-
 .navigation__controle:focus {
   /**
    * Les styles du navigateur utilisent la règle outline pour définir
@@ -701,12 +681,12 @@ body {
   outline-offset: -5px;
   outline: #f5ae09 auto 5px;
 }
-
 @media (min-width: 601px) {
   .navigation__controle {
     display: none;
   }
 }
+
 /* Liens du menu */
 .menu-item a {
   background-color: #d9d7d0;
@@ -716,16 +696,13 @@ body {
   /*     outline: none;
        border-left: 5px solid #f5ae09;*/
 }
-
 .menu-item a:link, .menu-item a:visited {
   text-decoration: none;
   color: inherit;
 }
-
 .menu-item a:active, .menu-item a:hover {
   background-color: #f5ae09;
 }
-
 .menu-item a--actif {
   border-left: 5px solid #f4d07c;
 }
@@ -743,6 +720,7 @@ body {
     display: inline-block;
   }
 }
+
 /* Si le javascript est activé */
 /* Pour des raisons d'accessibilité, on ne cache le menu mobile
  * que si JavaScript est activé. De cette façon, s'il est désactivé,
@@ -757,12 +735,12 @@ body {
 .js .navigation--ferme .menu {
   max-height: 0;
 }
-
 @media (min-width: 601px) {
   .js .navigation--ferme .menu {
     max-height: none;
   }
 }
+
 /** entête de page **/
 /* Entete de page */
 /** navigation **/
@@ -778,13 +756,11 @@ body {
   max-width: 960px;
   margin: 0 auto;
 }
-
 .navigation__secondaire ul {
   list-style: none;
   margin: 10px 0 10px 10px;
   padding: 0;
 }
-
 .navigation__secondaire li {
   display: inline-block;
   margin-right: 2px;
@@ -799,7 +775,6 @@ body {
   border-top: 1px solid #333;
   clear: both;
 }
-
 .piedDePage h2 {
   margin: 0;
   padding: 10px;
@@ -812,7 +787,6 @@ body {
   padding-right: 8px;
   margin-bottom: 10px;
 }
-
 .article__entete {
   background-color: #eee;
 }
@@ -822,7 +796,5 @@ body {
 .b_page {
   background: linear-gradient(180deg, #7600AD 0%, #C95DFB 60%);
 }
-
-
 
 /*# sourceMappingURL=styles.css.map */
