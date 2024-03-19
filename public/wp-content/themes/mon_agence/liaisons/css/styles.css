@@ -800,7 +800,7 @@ body {
 
 /** barres latérales  optionnelles**/
 /** Nos mandat **/
-body {
+.b_page {
   background: linear-gradient(180deg, #7600AD 0%, #C95DFB 60%);
 }
 
