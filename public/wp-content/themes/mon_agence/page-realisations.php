@@ -5,7 +5,7 @@ get_header(); //Appel de l'inclusion d'entête de page
 echo "page-realisations.php";
 ?>
 
-<main class="page">
+<main class="page b_page">
 
     <?php //var_dump($post); //Ce que reçoit la page
     ?>
@@ -36,6 +36,10 @@ echo "page-realisations.php";
 
     if (have_posts()) {
         //tant qu'il restera des articles
+        ?>
+        <div id="articles">
+
+        <?php
         foreach ($posts as $post) { ?>
             <article class="article">
                 <header class="article__entete">
@@ -75,6 +79,9 @@ echo "page-realisations.php";
         //réinitialise les données reçues par défaut du gabarit pour afficher le
         //reste des informations de la page, s'il y a lieu
         //wp_reset_postdata();
+        ?>
+        </div>
+        <?php
     } ?>
 </main>
 <?php get_sidebar() ?>

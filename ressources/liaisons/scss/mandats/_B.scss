@@ -13,3 +13,13 @@ figcaption{
 	text-align: center;
 	font-weight: bold;
 }
+
+#articles{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+article{
+	width: 405px;
+	height: 510px;
+}
