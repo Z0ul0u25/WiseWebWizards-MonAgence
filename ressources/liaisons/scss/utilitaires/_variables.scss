@@ -19,6 +19,25 @@ sans-serif;
 $fonteSecondaire : Arial,
 sans-serif;
 
+/* Tailles de texte */
+
+//Mobile
+$mobileH1 : 48px;
+$mobileH2 : 32px;
+$mobileH3 : 24px;
+
+//Table
+$tableH1 : 64px;
+$tableH2 : 48px;
+$tableH3 : 32px;
+$tableH4 : 24px;
+
+//Texte
+$paragraphe : 16px;
+$hyperlien : 16px;
+$lien : 20px;
+
+
 /** Palette de couleurs **/
 // Utiliser http://chir.ag/projects/name-that-color pour obtenir des noms uniques et mémorisables
 // Permettez-vous d'utiliser un nom de variable plus explicite si la suggestion de name-that-color est trop étrange

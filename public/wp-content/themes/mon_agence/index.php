@@ -2,7 +2,7 @@
 // include "header.php";
 get_header();
 ?>
-<main class="page">
+<main class="a_page">
 <?php //si la page reçoit des articles
 	// if(have_posts()){
 		//tant qu'il restera des articles

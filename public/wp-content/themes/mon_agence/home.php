@@ -2,7 +2,7 @@
 // include "header.php";
 get_header();
 ?>
-<main class="page">
+<main class="a_page">
 	<?php //si la page reçoit des articles
 	echo "home.php";
 	// if(have_posts()){
