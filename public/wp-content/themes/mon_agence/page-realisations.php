@@ -11,10 +11,8 @@ get_header(); //Appel de l'inclusion d'entête de page
     ?>
 
     <div>
-        <h2><?php the_title() //fonction native WP
-            ?></h2>
-        <h2><?php //echo $post->post_title  //Façon alternative en utilisant la variable $post
-            ?></h2>
+        <h1><?php the_title() //fonction native WP
+            ?></h1>
     </div>
     <p>
         <?php the_content() ?>
@@ -36,50 +34,45 @@ get_header(); //Appel de l'inclusion d'entête de page
 
     if (have_posts()) {
         //tant qu'il restera des articles
-        ?>
+    ?>
         <div id="articles">
 
-        <?php
-        foreach ($posts as $post) { ?>
-            <article class="article">
-                <header class="article__entete">
-                    <h3 class="article__titre">
-                        <?php //affiche le lien et le titre de l'article'
-                        ?>
-                        <a class="article__lien" href="<?php the_permalink(); ?>"><?php the_title() ?></a>
-                    </h3>
-                </header>
-                <?php
+            <?php
+            foreach ($posts as $post) { ?>
+                <article class="article">
+                    <?php
+                    $image_info = get_field("photo_1");
+                    //Si l'image est définie dans ACF
+                    if ($image_info != null) {
 
-                $image_info = get_field("photo_1");
+                        //Utiliser la balise picture pour le redimensionnement de l'image
+                    ?>
+                        <picture>
+                            <!-- <source media="(min-width: 800px)" srcset="<?php echo $image_info['sizes']["medium"]; ?>"> -->
+                            <source media="(min-width: 601px)" srcset="<?php echo $image_info['sizes']["medium"]; ?>">
+                            <img src="<?php echo $image_info['sizes']['thumbnail']; ?>" alt="<?php echo $image_info["alt"]; ?>">
+                        </picture>
 
-                //Si l'image est définie dans ACF
-                if ($image_info != null) {
+                    <?php } ?>
 
-                    //Utiliser la balise picture pour le redimensionnement de l'image
-                ?>
-                    <picture>
-                        <!-- <source media="(min-width: 800px)" srcset="<?php echo $image_info['sizes']["medium"]; ?>"> -->
-                        <source media="(min-width: 601px)" srcset="<?php echo $image_info['sizes']["medium"]; ?>">
-                        <img src="<?php echo $image_info['sizes']['thumbnail']; ?>" alt="<?php echo $image_info["alt"]; ?>">
-                    </picture>
+                    <header class="article__entete">
+                            <a class="article__lien" href="<?php the_permalink(); ?>"><h2 class="article__titre"><?php the_title() ?></h2></a>
+                    </header>
 
-                <?php } ?>
+                    <p><?php echo get_field("nom_client") ?></p>
 
-                <p><?php echo get_field("nom_client") ?></p>
+                    <p class="article__texte">
+                        <a href="<?php the_permalink(); ?>">En savoir plus</a>
+                    </p>
+                </article>
+            <?php }
 
-                <p class="article__texte">
-                    <a href="<?php the_permalink(); ?>">En savoir plus</a>
-                </p>
-            </article>
-    <?php }
-
-        //réinitialise les données reçues par défaut du gabarit pour afficher le
-        //reste des informations de la page, s'il y a lieu
-        //wp_reset_postdata();
-        ?>
+            //réinitialise les données reçues par défaut du gabarit pour afficher le
+            //reste des informations de la page, s'il y a lieu
+            //wp_reset_postdata();
+            ?>
         </div>
-        <?php
+    <?php
     } ?>
 </main>
 <?php get_sidebar() ?>

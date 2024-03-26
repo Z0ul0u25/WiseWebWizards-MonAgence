@@ -16,14 +16,33 @@
 	#articles{
 		display: flex;
 		flex-grow: 1;
-		flex-shrink: 0;
-		justify-content: space-between;
-		flex-wrap: wrap;
+		align-items: flex-start;
+		align-content: flex-start;
+		justify-content: center;
+		flex-direction: column;
+		gap:50px;
+		@media (min-width:415px){
+			flex-direction: row;
+			flex-wrap: wrap;
+			flex-shrink: 0;
+			justify-content: space-around;
+		}
 	}
 
 	article{
-		width: 405px;
-		height: 510px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 330px;
+		height: auto;
 		background-color: $mauvePale;
+		@media(min-width: 415px){
+			width: 405px;
+			height: auto;
+		}
+		h2{
+			align-self: stretch;
+		}
 	}
 }
