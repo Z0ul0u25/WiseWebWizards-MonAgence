@@ -1,4 +1,36 @@
 /* Entete de page */
 .entete{
+  padding-bottom: 150px;
+  &:last-of-type{
+    color: white;
+    .entete__titre{
+      font-size: 36px;
+      white-space: pre;
+    }
+    .entete__slogan{
+      padding-top: 35px;
+      font-size: $paragraphe;
+      font-weight: lighter;
+      width: 100%;
+    }
+  }
+}
 
+@media(min-width: 601px){
+  .entete{
+    padding-bottom: 170px;
+    div{
+      &:last-of-type{
+        padding-left: 10px;
+        .entete__titre{
+          font-size: $tableH1;
+        }
+        .entete__slogan{
+          font-size: $paragraphe;
+          padding-top: 0;
+          width: 30%;
+        }
+      }
+    }
+  }
 }

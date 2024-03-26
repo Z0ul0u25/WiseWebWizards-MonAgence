@@ -3,7 +3,7 @@
    ========================================================================
  */
 // https://codepen.io/joesayegh/pen/jOEVPKO
-@media(max-width:600px){
+
   #hamburgerlogo {
     top:100px;
     cursor: pointer;
@@ -13,6 +13,7 @@
     position: absolute;
     z-index: 2;
     right: 20px;
+    display: block;
 
     // THE LINES
     span,
@@ -103,4 +104,20 @@
       background: $gradientMauveFonce;
     }
   }
-}
+
+  @media(min-width: 601px) {
+    #hamburgerlogo{
+      display: none;
+    }
+    .nav-principale{
+      padding-left: 50px;
+      padding-top: 45px;
+      padding-bottom: 117px;
+      visibility: visible;
+      position: relative;
+      opacity: 1;
+    }
+
+  }
+
+

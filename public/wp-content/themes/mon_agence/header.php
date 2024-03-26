@@ -1,5 +1,8 @@
 <DOCTYPE html>
-    <?php $titrePage = "Ouvrons ensemble les portes de l'enchantement digital.";
+    <?php $titrePage = "Ouvrons ensemble
+les portes de
+l'enchantement 
+digital.";
     ?>
     <html <?php language_attributes(); ?>>
 
@@ -60,7 +63,9 @@
                     </div>
                 </nav>
             <?php } ?>
-            <h1 class="entete__titre"><?php echo $titrePage ?></h1>
-            <h2 class="entete__slogan"><?php bloginfo("description") ?></h2>
+            <div>
+                <h1 class="entete__titre"><?php echo $titrePage ?></h1>
+                <h2 class="entete__slogan"><?php bloginfo("description") ?></h2>
+            </div>
         </header>
         <div class="contenu">
