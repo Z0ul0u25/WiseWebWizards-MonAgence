@@ -14,10 +14,10 @@ echo "single-realisation.php";
 		</header>
 
 
-		<div class="article__top">
+		<div class="article__top gauche">
 
 			<?php $image_info = get_field("photo_1"); ?>
-			<img src="<?= $image_info['sizes']["thumbnail"] ?>" alt="<?= $image_info["alt"]; ?>">
+			<img src="<?= $image_info['sizes']["medium"] ?>" alt="<?= $image_info["alt"]; ?>">
 
 			<div class="article__texte">
 				<p>

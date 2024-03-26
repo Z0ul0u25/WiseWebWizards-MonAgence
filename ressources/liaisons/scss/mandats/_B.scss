@@ -46,8 +46,11 @@
 #b_single{
 	.article__top{
 		display: grid;
-		grid-template-columns: auto auto;
+		grid-template-columns: auto;
 		color: #fff;
+		@media (min-width:601px) {
+			grid-template-columns: auto auto;
+		}
 	}
 	.article__img{
 		display: flex;
