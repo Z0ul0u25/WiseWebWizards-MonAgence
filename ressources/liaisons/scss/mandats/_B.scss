@@ -1,11 +1,10 @@
 // Prévixer les id et classes avec "b_"
-.b_article__top{
-	display: grid;
-	grid-template-columns: auto auto;
-	color: #fff;
-}
 .b_page{
 	background: $gradientMauve;
+	color: #000;
+}
+
+#b_hub{
 
 
 	figcaption{
@@ -41,5 +40,13 @@
 			width: 405px;
 			height: auto;
 		}
+	}
+}
+
+#b_single{
+	.article__top{
+		display: grid;
+		grid-template-columns: auto auto;
+		color: #fff;
 	}
 }

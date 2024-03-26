@@ -5,7 +5,7 @@ get_header(); //Appel de l'inclusion d'entête de page
 // echo "page-realisations.php";
 ?>
 
-<main class="page b_page">
+<main class="page b_page" id="b_hub">
 
     <?php //var_dump($post); //Ce que reçoit la page
     ?>
