@@ -7,7 +7,7 @@
   #hamburgerlogo {
     cursor: pointer;
     height: 40px;
-    width: 45px;
+    width: 40px;
     overflow: visible;
     position: absolute;
     z-index: 2;
@@ -17,13 +17,14 @@
     span,
     span:before,
     span:after {
-      background: #fff;
+      background: white;
       display: block;
       height: 4px;
       opacity: 1;
       position: absolute;
       transition: 0.3s ease-in-out;
       border-radius: 35px;
+
     }
 
     span:before,
@@ -81,6 +82,7 @@
   }
 
   .nav-principale {
+    font-size: $paragraphe;
     z-index: 1;
     min-width: 100%;
     min-height: 100%;
