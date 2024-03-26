@@ -1,5 +1,5 @@
 /**
-* @author Prenom Nom courriel
+* @author WiseWebWizards
 * @todo Préciser l’interlignage sur le body pour l’écran large
 * @todo Utiliser le mixin fontSize pour définir les tailles de polices
 * @todo Utiliser une variable pour la media query de la règle body
@@ -13,7 +13,7 @@ html {
 
 body {
   font-family: $fonteSecondaire;
-  @include fontSize(16px);
+  @include fontSize(16);
   line-height: 1.375; /* facteur multiplicateur de la taille de la police 1.375x16=22 */
   @media (min-width: 601px) {
   }
@@ -26,15 +26,15 @@ h2,
 h3,
 .titreNiveau3 {
   font-family: $fontePrimaire;
-  font-weight: 500;
+  // font-weight: 500;
 }
 
 h1,
 .titreNiveau1 {
-  @include fontSize(28px);
+  @include fontSize(28);
   margin: 0;
   &--desktop {
-    @include fontSize(48px);
+    @include fontSize(48);
     padding-bottom: 15px;
     position: relative;
     &:after {
@@ -52,24 +52,23 @@ h1,
 
 h2,
 .titreNiveau2{
-  @include fontSize(20px);
-  text-transform: uppercase;
+  @include fontSize(20);
   &--desktop {
-    @include fontSize(28px);
+    @include fontSize(28);
   }
 }
 
 h3,
 .titreNiveau3 {
-  @include fontSize(18px);
+  @include fontSize(18);
   &--desktop {
-    @include fontSize(22px);
+    @include fontSize(22);
   }
 }
 
 .texte {
   font-family: $fonteSecondaire;
-  @include fontSize(16px);
+  @include fontSize(16);
   line-height: 1.375;
   &--desktop {
     line-height: 1.5;
