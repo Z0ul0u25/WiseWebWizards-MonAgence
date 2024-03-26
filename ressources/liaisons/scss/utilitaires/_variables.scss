@@ -8,15 +8,49 @@
 */
 
 /** Polices de caractères **/
-
+/*Volkhov*/
 @font-face {
-  font-family: Futura, sans-serif;
-  src        : url('../fonts/Futura.ttc') format('truetype');
+  font-family: "Volkhov";
+  src        : url('../fonts/Volkhov-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style : italic, oblique;
 }
 
-$fontePrimaire : Futura,
-sans-serif;
-$fonteSecondaire : Arial,
+@font-face {
+  font-family: "Volkhov";
+  src        : url('../fonts/Volkhov-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Volkhov";
+  src        : url('../fonts/Volkhov-Italic.ttf') format('truetype');
+  font-style : italic, oblique;
+}
+
+@font-face {
+  font-family   : "Volkhov";
+  src           : url('../fonts/Volkhov-Regular.ttf') format('truetype');
+  // font-weight: normal;
+  // font-style: normal;
+}
+
+/*Nunito*/
+@font-face {
+  font-family: "Nunito";
+  src        : url('../fonts/Nunito-Italic-VariableFont_wght.ttf') format('truetype');
+  font-style : italic, oblique;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src        : url('../fonts/Nunito-VariableFont_wght.ttf') format('truetype');
+}
+
+
+$fontePrimaire : "Volkhov",
+serif;
+$fonteSecondaire : "Nunito",
 sans-serif;
 
 /* Tailles de texte */
@@ -34,8 +68,8 @@ $tableH4 : 24px;
 
 //Texte
 $paragraphe : 16px;
-$hyperlien : 16px;
-$lien : 20px;
+$hyperlien  : 16px;
+$lien       : 20px;
 
 
 /** Palette de couleurs **/
@@ -51,7 +85,7 @@ $gradientMauve            : linear-gradient(180deg, #7600AD 0%, #C95DFB 60%);
 $gradientMauveTransparent : linear-gradient(180deg, #F2E4F9 50.6%, #C576E0 134.92%);
 $gradientMauveFonce       : linear-gradient(0deg, #1F0335 -2.79%, #5B099B 46.55%);
 /* Autres couleurs */
-$hyperlien : #008800; // A changer
+$hyperlien                : #008800; // A changer
 
 /** Points de rupture **/
 $desktop : 601px;
