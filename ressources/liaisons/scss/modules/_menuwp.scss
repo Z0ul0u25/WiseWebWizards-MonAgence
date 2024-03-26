@@ -5,13 +5,14 @@
 // https://codepen.io/joesayegh/pen/jOEVPKO
 @media(max-width:600px){
   #hamburgerlogo {
+    top:100px;
     cursor: pointer;
     height: 40px;
     width: 40px;
     overflow: visible;
     position: absolute;
     z-index: 2;
-    right: 0;
+    right: 20px;
 
     // THE LINES
     span,
@@ -24,7 +25,6 @@
       position: absolute;
       transition: 0.3s ease-in-out;
       border-radius: 35px;
-
     }
 
     span:before,
