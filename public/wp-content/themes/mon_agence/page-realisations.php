@@ -2,7 +2,7 @@
 /*Template name: realisations */
 
 get_header(); //Appel de l'inclusion d'entête de page
-echo "page-realisations.php";
+// echo "page-realisations.php";
 ?>
 
 <main class="page b_page">
@@ -59,7 +59,7 @@ echo "page-realisations.php";
                     //Utiliser la balise picture pour le redimensionnement de l'image
                 ?>
                     <picture>
-                        <source media="(min-width: 800px)" srcset="<?php echo $image_info['sizes']["large"]; ?>">
+                        <!-- <source media="(min-width: 800px)" srcset="<?php echo $image_info['sizes']["medium"]; ?>"> -->
                         <source media="(min-width: 601px)" srcset="<?php echo $image_info['sizes']["medium"]; ?>">
                         <img src="<?php echo $image_info['sizes']['thumbnail']; ?>" alt="<?php echo $image_info["alt"]; ?>">
                     </picture>
@@ -69,9 +69,7 @@ echo "page-realisations.php";
                 <p><?php echo get_field("nom_client") ?></p>
 
                 <p class="article__texte">
-                    <?php //affiche le l'extrait de la réalisation
-                    the_excerpt();
-                    ?>
+                    <a href="<?php the_permalink(); ?>">En savoir plus</a>
                 </p>
             </article>
     <?php }

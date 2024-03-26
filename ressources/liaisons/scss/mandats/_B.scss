@@ -1,25 +1,29 @@
 // Prévixer les id et classes avec "b_"
-.b_page{
-	background: $gradientMauve;
-}
-
 .b_article__top{
 	display: grid;
 	grid-template-columns: auto auto;
 	color: #fff;
 }
+.b_page{
+	background: $gradientMauve;
 
-figcaption{
-	text-align: center;
-	font-weight: bold;
-}
 
-#articles{
-	display: flex;
-	flex-wrap: wrap;
-}
+	figcaption{
+		text-align: center;
+		font-weight: bold;
+	}
 
-article{
-	width: 405px;
-	height: 510px;
+	#articles{
+		display: flex;
+		flex-grow: 1;
+		flex-shrink: 0;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	article{
+		width: 405px;
+		height: 510px;
+		background-color: $mauvePale;
+	}
 }
