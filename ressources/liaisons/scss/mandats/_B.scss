@@ -49,4 +49,23 @@
 		grid-template-columns: auto auto;
 		color: #fff;
 	}
+	.article__img{
+		display: flex;
+		flex-direction: column;
+	}
+	.gauche{
+		align-self: flex-start;
+		img{
+
+			/* La fonction repeat() ne fonctionne pas avec le sass de npm*/
+			//border-radius: 0 repeat(3, 32px);
+			border-radius: 0 32px 32px 32px;
+		}
+	}
+	.droite{
+		align-self: flex-end;
+		img{
+			border-radius: 32px 0 32px 32px;
+		}
+	}
 }

@@ -23,33 +23,36 @@ echo "single-realisation.php";
 				<p>
 					<?php the_content() ?>
 				</p>
-				<?php
-
-				//Affichage de plusieurs images responsives définies dans les champs d'ACF
-
-				//Boucler dans les champs d'images de ACF - un champ par image
-				//Nommer les champs avec un numéro - photo_1, photo_2
-				//Ici 3 images possibles
-				for ($cpt = 2; $cpt <= 4; $cpt++) {
-
-					//Le champ d'ACF doit être configuré pour retourner un tableau
-					$image_info = get_field("photo_" . $cpt);
-
-					//Si l'image est définie dans ACF
-					if ($image_info != null) {
-						//Utiliser la balise picture pour le redimensionnement de l'image
-						//ici on utilise trois images personnalisées... Mais on peut utiliser thumbnail, medium, etc...
-						//l'attribut sizes contient tout les formats d'image nécessaire.
-				?>
-						<picture>
-							<source media="(min-width: 601px)" srcset="<?php echo $image_info['sizes']["medium"]; ?>">
-							<img src="<?= $image_info['sizes']["thumbnail"] ?>" alt="<?= $image_info["alt"]; ?>">
-						</picture>
-
-				<?php
-					}
-				} ?>
 			</div>
+		</div>
+		<div class="article__img">
+
+			<?php
+
+			//Affichage de plusieurs images responsives définies dans les champs d'ACF
+
+			//Boucler dans les champs d'images de ACF - un champ par image
+			//Nommer les champs avec un numéro - photo_1, photo_2
+			//Ici 3 images possibles
+			for ($cpt = 2; $cpt <= 4; $cpt++) {
+
+				//Le champ d'ACF doit être configuré pour retourner un tableau
+				$image_info = get_field("photo_" . $cpt);
+
+				//Si l'image est définie dans ACF
+				if ($image_info != null) {
+					//Utiliser la balise picture pour le redimensionnement de l'image
+					//ici on utilise trois images personnalisées... Mais on peut utiliser thumbnail, medium, etc...
+					//l'attribut sizes contient tout les formats d'image nécessaire.
+			?>
+					<picture class="<?php echo($cpt%2==0)?"gauche":"droite"; ?>">
+						<source media="(min-width: 601px)" srcset="<?php echo $image_info['sizes']["medium"]; ?>">
+						<img src="<?= $image_info['sizes']["thumbnail"] ?>" alt="<?= $image_info["alt"]; ?>">
+					</picture>
+
+			<?php
+				}
+			} ?>
 		</div>
 		<p>
 			<?php //Version améliorée avec flèche et titre des articles adjacents.
