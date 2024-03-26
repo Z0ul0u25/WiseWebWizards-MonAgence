@@ -1,27 +1,47 @@
 header{
   background: purple;
 }
-.menu__principal ul li{
+
+/* Navigation principale */
+
+.menu__principal .menu-item{
   width: 100%;
 }
-.fa{
-  color: white;
-  &::before{
-    float: left;
-    margin-top: 0;
-    width: 40px;
-  }
-}
 
-.menu-item{
-  padding: 10px;
-  color: white;
-  a{
+.menu__principal{
+  padding-top: 30px;
+  .fa{
     color: white;
-    text-decoration: none;
+    &::before{
+      float: left;
+      margin-top: 0;
+      width: 25px;
+    }
   }
+
+  div{
+    padding-bottom: 124px;
+    .menu{
+      padding-top: 60px;
+      margin: 0;
+      .menu-item{
+        padding: 10px;
+        a{
+          color: white;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .logo{
+      margin-left: 10px;
+    }
+  }
+
 }
 
+
+/* Navigation secondaire */
 
 .navigation__secondaire {
   max-width: 960px;

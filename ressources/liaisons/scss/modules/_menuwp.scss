@@ -5,19 +5,20 @@
 // https://codepen.io/joesayegh/pen/jOEVPKO
 @media(max-width:600px){
   #hamburgerlogo {
+    top:100px;
     cursor: pointer;
     height: 40px;
-    width: 45px;
+    width: 40px;
     overflow: visible;
     position: absolute;
     z-index: 2;
-    right: 0;
+    right: 20px;
 
     // THE LINES
     span,
     span:before,
     span:after {
-      background: #fff;
+      background: white;
       display: block;
       height: 4px;
       opacity: 1;
@@ -81,6 +82,7 @@
   }
 
   .nav-principale {
+    font-size: $paragraphe;
     z-index: 1;
     min-width: 100%;
     min-height: 100%;
