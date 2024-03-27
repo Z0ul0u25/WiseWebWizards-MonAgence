@@ -162,9 +162,9 @@ add_action('wp_enqueue_scripts', 'wmpudev_enqueue_icon_stylesheet');
 add_filter( 'jpeg_quality', 'my_prefix_regenerate_thumbnail_quality'); function my_prefix_regenerate_thumbnail_quality() {
     return 100; };
 
-// if (function_exists("add_image_size")) {
-//     add_image_size()
-// };
+if (function_exists("add_image_size")) {
+    add_image_size("image-bande", 2880, 1536, true);
+};
 
 if (function_exists("add_theme_support")) {
     add_theme_support( 'post-thumbnails');
