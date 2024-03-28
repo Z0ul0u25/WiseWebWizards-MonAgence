@@ -26,7 +26,7 @@ digital.";
             <?php if (has_nav_menu("principal")) { ?>
                 <nav id="principal " class="menu__principal">
                     <div>
-                        <svg class="logo" width="76" height="76" viewBox="0 0 306 306" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <a href=""><svg class="logo" width="76" height="76" viewBox="0 0 306 306" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_257_860)">
                                 <path d="M153 306C237.5 306 306 237.5 306 153C306 68.5004 237.5 0 153 0C68.5004 0 0 68.5004 0 153C0 237.5 68.5004 306 153 306Z" fill="white"/>
                                 <mask id="mask0_257_860" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="40" y="46" width="226" height="186">
@@ -53,7 +53,7 @@ digital.";
                                     <rect width="306" height="306" fill="white"/>
                                 </clipPath>
                             </defs>
-                        </svg>
+                        </svg></a>
                         <div id="hamburgerlogo">
                             <span></span>
                         </div>

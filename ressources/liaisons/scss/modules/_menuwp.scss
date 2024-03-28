@@ -85,11 +85,8 @@
   .nav-principale {
     font-size: $paragraphe;
     z-index: 1;
-    min-width: 100%;
-    min-height: 100%;
     position: fixed;
     top: 0;
-    height: 0;
     visibility: hidden;
     opacity: 0;
     text-align: left;
