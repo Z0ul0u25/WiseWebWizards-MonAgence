@@ -1,6 +1,7 @@
 <?php
 /*Template name: services */
-
+$pageSingle = false;
+$slogan = false;
 get_header(); //Appel de l'inclusion d'entête de page
 echo "page-services.php";
 ?>

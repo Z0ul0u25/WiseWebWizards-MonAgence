@@ -1,5 +1,7 @@
 <?php
 // include "header.php";
+$pageSingle = false;
+$slogan = true;
 get_header();
 ?>
 <main class="a_page">

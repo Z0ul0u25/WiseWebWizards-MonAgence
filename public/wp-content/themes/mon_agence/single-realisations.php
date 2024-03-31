@@ -1,6 +1,8 @@
 <?php
+$pageSingle = true;
 get_header();
 echo "single-realisation.php";
+
 ?>
 
 <main class="page b_page" id="b_single">

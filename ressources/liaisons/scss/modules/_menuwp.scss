@@ -5,14 +5,14 @@
 // https://codepen.io/joesayegh/pen/jOEVPKO
 
   #hamburgerlogo {
-    top:100px;
+    top: 55px;
     cursor: pointer;
     height: 40px;
     width: 40px;
     overflow: visible;
     position: absolute;
     z-index: 2;
-    right: 20px;
+    right: 10px;
     display: block;
 
     // THE LINES
@@ -87,6 +87,8 @@
     z-index: 1;
     position: fixed;
     top: 0;
+    min-height: 100%; //peut être problématique
+    min-width: 100%;  //peut être problématique
     visibility: hidden;
     opacity: 0;
     text-align: left;
@@ -97,7 +99,7 @@
     &.overlay {
       visibility: visible;
       opacity: 1;
-      padding-top: 130px;
+      padding-top: 80px;
       background: $gradientMauveFonce;
     }
   }
@@ -109,10 +111,13 @@
     .nav-principale{
       padding-left: 50px;
       padding-top: 45px;
-      padding-bottom: 117px;
       visibility: visible;
       position: relative;
       opacity: 1;
+
+      &.overlay {
+        background: none;
+      }
     }
 
   }

@@ -1,4 +1,5 @@
 <?php
+$pageSingle = true;
 get_header();
 echo "single-services.php";
 ?>

@@ -1,6 +1,7 @@
 <?php
 /*Template name: realisations */
-
+$pageSingle = false;
+$slogan = false;
 get_header(); //Appel de l'inclusion d'entête de page
 // echo "page-realisations.php";
 ?>
