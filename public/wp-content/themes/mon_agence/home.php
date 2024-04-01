@@ -1,7 +1,7 @@
 <?php
 // include "header.php";
 $pageSingle = false;
-$slogan = "Wise Web Wizards – Où la magie rencontre le web pour créer des expériences transcendantales.";
+$slogan = get_bloginfo("description");
 $titrePage = "Ouvrons ensemble
 les portes de
 l'enchantement 

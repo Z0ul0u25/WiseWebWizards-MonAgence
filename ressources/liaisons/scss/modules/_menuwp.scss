@@ -91,7 +91,7 @@
     min-width: 100%;  //peut être problématique
     visibility: hidden;
     opacity: 0;
-    text-align: left;
+    //text-align: left;
     padding-top: 20px;
     right:0;
     transition: all 0.3s ease-in-out;
@@ -115,6 +115,7 @@
       visibility: visible;
       position: relative;
       opacity: 1;
+      justify-content: space-between;
 
       &.overlay {
         background: none;

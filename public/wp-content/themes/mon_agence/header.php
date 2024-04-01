@@ -79,10 +79,10 @@
                             <div class="nav-principale">
                                 <?php wp_nav_menu(array("theme_location" => "principal")); ?>
                                 <div class="medias-icons">
-                                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    <a href="http://facebook.com"><i class="fa fa-lg fa-facebook-square" aria-hidden="true"></i></a>
+                                    <a href="http://twitter.com"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>
+                                    <a href="http://youtube.com"><i class="fa fa-lg fa-youtube-play" aria-hidden="true"></i></a>
+                                    <a href="http://instagram.com"><i class="fa fa-lg fa-instagram" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </nav>
@@ -146,10 +146,10 @@
                                 <div class="nav-principale">
                                     <?php wp_nav_menu(array("theme_location" => "principal")); ?>
                                     <div class="medias-icons">
-                                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                                        <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                        <a href="http://facebook.com"><i class="fa fa-lg fa-facebook-square" aria-hidden="true"></i></a>
+                                        <a href="http://twitter.com"><i class="fa fa-lg fa-twitter" aria-hidden="true"></i></a>
+                                        <a href="http://youtube.com"><i class="fa fa-lg fa-youtube-play" aria-hidden="true"></i></a>
+                                        <a href="http://instagram.com"><i class="fa fa-lg fa-instagram" aria-hidden="true"></i></a>
                                     </div>
                                 </div>
                             </nav>
