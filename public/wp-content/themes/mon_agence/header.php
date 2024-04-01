@@ -145,6 +145,12 @@
                                 </div>
                                 <div class="nav-principale">
                                     <?php wp_nav_menu(array("theme_location" => "principal")); ?>
+                                    <div class="medias-icons">
+                                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    </div>
                                 </div>
                             </nav>
                         <?php } ?>
