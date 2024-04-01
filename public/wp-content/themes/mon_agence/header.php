@@ -1,10 +1,7 @@
 <DOCTYPE html>
     <?php global $pageSingle;
           global $slogan;
-    $titrePage = "Ouvrons ensemble
-les portes de
-l'enchantement 
-digital.";
+          global $titrePage;
 
     ?>
     <html <?php language_attributes(); ?>>
@@ -25,7 +22,7 @@ digital.";
     </head>
 
     <body>
-        <?php if($pageSingle){?>
+        <?php if($pageSingle == true){?>
             <header class="entete__single">
                 <div class="fond">
                     <?php if (has_nav_menu("principal")) { ?>
@@ -147,8 +144,8 @@ digital.";
                         <?php } ?>
                         <div>
                             <h1 class="entete__titre"><?php echo $titrePage ?></h1>
-                            <?php if($slogan){?>
-                            <h2 class="entete__slogan"><?php bloginfo("description") ?></h2>
+                            <?php if($slogan != ""){?>
+                            <h2 class="entete__slogan"><?php echo $slogan ?></h2>
                             <?php }
                             else{?>
                                 <h2></h2>

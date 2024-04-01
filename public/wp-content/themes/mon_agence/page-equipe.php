@@ -1,7 +1,7 @@
 <?php
 /*Template name: equipe */
 $pageSingle = false;
-$slogan = true;
+$slogan = "";
 get_header(); //Appel de l'inclusion d'entête de page
 echo "page-equipe.php";
 ?>
