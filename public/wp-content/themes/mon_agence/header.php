@@ -22,7 +22,7 @@
     </head>
 
     <body>
-        <?php if($pageSingle == true){?>
+        <?php if($pageSingle){?>
             <header class="entete__single">
                 <div class="fond">
                     <?php if (has_nav_menu("principal")) { ?>
