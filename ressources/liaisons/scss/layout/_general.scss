@@ -29,7 +29,6 @@ body {
 //   }
 // }
 .a_page,.b_page,.c_page{
-  max-width: 1000px;
   margin: 0 10px;
   box-sizing: content-box;
 }
@@ -41,7 +40,7 @@ body {
 }
 @media (min-width:1001px) {
   .a_page,.b_page,.c_page {
-    
+    padding: 0 10vw;
   }
 }
 
