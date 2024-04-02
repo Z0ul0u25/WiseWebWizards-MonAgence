@@ -1,7 +1,6 @@
 <?php
 $pageSingle = true;
 get_header();
-echo "single-realisation.php";
 
 ?>
 
@@ -48,7 +47,8 @@ echo "single-realisation.php";
 					//l'attribut sizes contient tout les formats d'image nécessaire.
 			?>
 					<picture class="<?php echo($cpt%2==0)?"gauche":"droite"; ?>">
-						<source media="(min-width: 601px)" srcset="<?php echo $image_info['sizes']["medium"]; ?>">
+						<source media="(min-width: 801px)" srcset="<?php echo $image_info['sizes']["large"]; ?>">
+						<source media="(min-width: 401px)" srcset="<?php echo $image_info['sizes']["medium"]; ?>">
 						<img src="<?= $image_info['sizes']["thumbnail"] ?>" alt="<?= $image_info["alt"]; ?>">
 					</picture>
 
