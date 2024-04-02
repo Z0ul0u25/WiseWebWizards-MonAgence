@@ -47,6 +47,12 @@
   src        : url('../fonts/Nunito-VariableFont_wght.ttf') format('truetype');
 }
 
+/*Macondo Swash Caps*/
+@font-face {
+  font-family: "Macondo Swash Caps";
+  src        : url('../fonts/MacondoSwashCaps-Regular.ttf') format('truetype');
+}
+
 
 $fontePrimaire : "Volkhov",
 serif;
