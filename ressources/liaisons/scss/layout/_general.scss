@@ -12,20 +12,35 @@ body {
     // margin: 0 220px;
   }
 }
-
-.contenu{
+// .contenu{
+//   max-width: 1000px;
+//   margin: 0 10px;
+//   box-sizing: content-box;
+// }
+// @media (min-width:601px){
+//   .contenu{
+//     margin: 0 auto;
+//     padding: 0 5vw;
+//   }
+// }
+// @media (min-width:1001px) {
+//   .contenu {
+    
+//   }
+// }
+.a_page,.b_page,.c_page{
   max-width: 1000px;
   margin: 0 10px;
   box-sizing: content-box;
 }
 @media (min-width:601px){
-  .contenu{
+  .a_page,.b_page,.c_page{
     margin: 0 auto;
     padding: 0 5vw;
   }
 }
 @media (min-width:1001px) {
-  .contenu {
+  .a_page,.b_page,.c_page {
     
   }
 }
