@@ -102,22 +102,3 @@
     }
   }
 }
-
-
-/* Navigation secondaire */
-
-.navigation__secondaire {
-  max-width: 960px;
-  margin   : 0 auto;
-
-  ul {
-    list-style: none;
-    margin    : 10px 0 10px 10px;
-    padding   : 0;
-  }
-
-  li {
-    display     : inline-block;
-    margin-right: 2px;
-  }
-}
