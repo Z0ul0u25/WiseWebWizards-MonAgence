@@ -28,7 +28,7 @@
                     <?php if (has_nav_menu("principal")) { ?>
                         <nav id="principal " class="menu__principal">
                             <div>
-                                <a href="">
+                                <a href="<?php echo get_home_url()?>">
                                     <svg class="logo" width="76" height="76" viewBox="0 0 306 306" fill="none"
                                          xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_257_860)">
@@ -95,7 +95,7 @@
                         <?php if (has_nav_menu("principal")) { ?>
                             <nav id="principal " class="menu__principal">
                                 <div>
-                                    <a href="">
+                                    <a href="<?php echo get_home_url()?>">
                                         <svg class="logo" width="76" height="76" viewBox="0 0 306 306" fill="none"
                                              xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_257_860)">

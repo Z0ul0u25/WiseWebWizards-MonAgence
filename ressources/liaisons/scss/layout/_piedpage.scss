@@ -1,15 +1,52 @@
 /*pied de page*/
 .piedDePage{
-  max-width: 960px;
-  margin: 0 auto;
-  background-color: #eee;
-  border-top: 1px solid #333;
-  clear: both;
-  h2{
-    margin: 0;
-    padding: 10px;
-    font-size: 1em;
-
+  background: $gradientMauveTransparent;
+  padding: 90px 10px 20px 10px;
+  .elements__princpaux{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+    h1{
+      font-size: 64px;
+      width: 40%;
+    }
+    .svg_etoile{
+      margin-right: 4em;
+      margin-top: 2em;
+      height: 90px;
+      width: 90px;
+    }
+  }
+  .elements__secondaires{
+    text-align: center;
+    h2{
+      margin:0;
+      font-size: $mobileH2;
+      padding-bottom: 20px;
+    }
+    .svg_chapeau{
+      height: 113px;
+      width: 138px;
+      margin-bottom: 70px;
+    }
+    .informations{
+      font-size: $paragraphe;
+      padding-bottom: 60px;
+      p{
+        margin:0;
+        padding-bottom: 30px;
+      }
+    }
+    .medias-icons{
+      padding-bottom: 150px;
+      i{
+        padding: 15px;
+        color: black;
+        &:hover{
+          color: $mauvePrimaire;
+        }
+      }
+    }
   }
 }
 
