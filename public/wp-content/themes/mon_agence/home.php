@@ -7,39 +7,85 @@ les portes de
 l'enchantement 
 digital.";
 get_header();
+
+$postsRealisation = get_posts(array(
+    'posts_per_page' => 2,
+    'post_type'    => 'realisations',
+    'post_status' => 'publish',
+    'orderby' => 'the_title',
+    'order' => 'ASC',
+));
 ?>
 <main class="a_page">
-	<?php //si la page reçoit des articles
-	echo "home.php";
-	// if(have_posts()){
-	//tant qu'il restera des articles
-	while (have_posts()) {
-		//passer à l'article suivant
-		the_post(); ?>
-		<article class="article">
-			<header class="article__entete">
-				<h2 class="article__titre">
-					<?php //affiche le lien et le titre de l'article'
-					?>
-					<a class="article__lien" href="<?php the_permalink(); ?>"><?php the_title() ?></a>
-				</h2>
-			</header>
-			<p class="article__texte">
-				<?php //affiche le texte de l'article
-				the_content();
-				?>
-			</p>
-			<?php if (has_post_thumbnail()) { ?>
-				<div class="article__imageUne">
-					<?php the_post_thumbnail("medium"); ?>
-				</div>
-			<?php } ?>
-		</article>
-	<?php } //}
-	?>
+    <div class="nouvelles">
+        <h2 class="titre_nouvelles">Nouvelles</h2>
+        <?php //si la page reçoit des articles
+        // if(have_posts()){
+        //tant qu'il restera des articles
+        while (have_posts()) {
+            //passer à l'article suivant
+            the_post(); ?>
+            <article class="article">
+                <header class="article__entete">
+                    <h2 class="article__titre">
+                        <a class="article__lien" href="<?php the_permalink(); ?>"><?php the_title() ?></a>
+                    </h2>
+                    <?php if (has_post_thumbnail()) { ?>
+                        <div class="article__imageUne">
+                            <?php the_post_thumbnail("medium"); ?>
+                        </div>
+                    <?php } ?>
+                </header>
+                <div class="article__texte">
+                    <?php //affiche le texte de l'article
+                    the_content();
+                    ?>
+
+                    <div class="article__savoirplus">
+                        <a class="hyperlien" href="<?php the_permalink(); ?>">En savoir plus</a>
+                    </div>
+                </div>
+            </article>
+        <?php } //}
+        ?>
+    </div>
+    <div class="realisation">
+        <h2 class="titre_realisation">Réalisations</h2>
+        <h3 class="h3">Envie d’en apprendre plus sur notre travail et nos réalisations ?</h3>
+        <?php
+        foreach ($postsRealisation as $post) { ?>
+            <article class="article">
+                <header class="article__entete">
+                    <a class="article__lien" href="<?php the_permalink(); ?>"><h3
+                                class="article__titre"><?php the_title() ?></h3></a>
+                    <p><?php echo get_field("nom_client") ?></p>
+                </header>
+
+                <div class="article__texte">
+                    <?php //affiche le texte de l'article
+                    the_content();
+                    ?>
+                </div>
+                <p class="hyperlien article__savoirplus">
+                    <a href="<?php the_permalink(); ?>">En savoir plus</a>
+                </p> </article>
+                <?php
+                $image_info = get_field("photo_1");
+                if ($image_info != null) {
+                    ?>
+                    <picture class="article__image">
+                        <!-- <source media="(min-width: 800px)" srcset="<?php echo $image_info['sizes']["medium"]; ?>"> -->
+                        <source media="(max-width: 600px)" srcset="<?php echo $image_info['sizes']["medium"]; ?>">
+                        <img src="<?php echo $image_info['sizes']['thumbnail']; ?>"
+                             alt="<?php echo $image_info["alt"]; ?>">
+                    </picture>
+                <?php } ?>
+
+        <?php } ?></div>
+    <p class="hyperlien lien__realisation"><a href="">Toutes nos réalisations</a></p>
 </main>
 <?php
 
-get_sidebar();
+//get_sidebar();
 get_footer();
 ?>

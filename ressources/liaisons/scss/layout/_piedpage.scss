@@ -25,17 +25,19 @@
       font-size: $mobileH2;
       padding-bottom: 20px;
     }
-    .svg_chapeau{
-      height: 113px;
-      width: 138px;
-      margin-bottom: 70px;
-    }
-    .informations{
-      font-size: $paragraphe;
-      padding-bottom: 60px;
-      p{
-        margin:0;
-        padding-bottom: 30px;
+    .container{
+      .svg_chapeau{
+        height: 113px;
+        width: 138px;
+        margin-bottom: 70px;
+      }
+      .informations{
+        font-size: $paragraphe;
+        padding-bottom: 60px;
+        p{
+          margin:0;
+          padding-bottom: 30px;
+        }
       }
     }
     .medias-icons{
@@ -61,8 +63,8 @@
         width: 41%;
       }
       .svg_etoile{
-        height: 140px;
-        width: 140px;
+        height: 144px;
+        width: 144px;
         left: 600px;
         margin-top: 20px;
       }
@@ -73,20 +75,27 @@
       h2{
         font-size: $tableH2;
       }
-      .svg_chapeau{
-        position: absolute;// à revoir car pas responsive
-        height: 480px;
-        width: 568px;
-        //bottom: 100px;
-        right: 440px;
-      }
-      .informations{
-        padding-bottom: 100px;
-        p{
-          &:last-child{
-            padding-top: 30px;
-          }
+      .container{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: left;
+        .svg_chapeau{
+          height: 100%;
+          width: 100%;
+          margin-bottom: 0;
+          padding-bottom: 150px;
+          margin-left: 200px;
+        }
+        .informations{
+          padding-bottom: 50px;
+          font-weight: bolder;
+          p{
+            font-size: $tableH4;
+            &:last-child{
+              padding-top: 30px;
+            }
 
+          }
         }
       }
     }
