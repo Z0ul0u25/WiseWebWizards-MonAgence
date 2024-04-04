@@ -1,5 +1,6 @@
 <?php
 // include "header.php";
+$photoVedette = "http://localhost/rpni2/mon_agence/public/wp-content/uploads/2024/04/fond-accueil-scaled.jpg";
 $pageSingle = false;
 $slogan = get_bloginfo("description");
 $titrePage = "Ouvrons ensemble

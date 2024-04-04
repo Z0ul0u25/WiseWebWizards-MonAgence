@@ -2,6 +2,7 @@
     <?php global $pageSingle;
           global $slogan;
           global $titrePage;
+          global $photoVedette;
 
     ?>
     <html <?php language_attributes(); ?>>
@@ -91,6 +92,7 @@
             <?php }
             else{?>
                 <header class="entete__principale">
+                    <img src="<?php echo $photoVedette ?>" alt="">
                     <div class="fond">
                         <?php if (has_nav_menu("principal")) { ?>
                             <nav id="principal " class="menu__principal">
@@ -163,6 +165,7 @@
                                 <h2></h2>
                             <?php }?>
                         </div>
+
                     </div>
             <?php }?>
         </header>

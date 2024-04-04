@@ -1,11 +1,15 @@
 /* Entete de page */
 .entete__principale{
+  img{
+    position: absolute;
+    height: 75%;
+    width: 100%;
+  }
   .fond{
-    background: $gradientMauveFonce;
+    position: relative;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius : 10px;
     padding-bottom: 100px;
-
     &:last-of-type{
       color: white;
       .entete__titre{
@@ -22,6 +26,7 @@
         margin-left: 10px;
       }
     }
+
   }
 }
 
@@ -36,6 +41,9 @@
 
 @media(min-width: 601px){
   .entete__principale{
+    img{
+      height: 90%;
+    }
     .fond{
       padding-bottom: 180px;
       div{
