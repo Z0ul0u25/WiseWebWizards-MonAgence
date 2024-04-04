@@ -19,10 +19,11 @@ $postsRealisation = get_posts(array(
 <main class="a_page">
     <div class="nouvelles">
         <h2 class="titre_nouvelles">Nouvelles</h2>
-        <?php //si la page reçoit des articles
-        // if(have_posts()){
-        //tant qu'il restera des articles
-        while (have_posts()) {
+        <div class="wrap">
+            <?php //si la page reçoit des articles
+            // if(have_posts()){
+            //tant qu'il restera des articles
+            while (have_posts()) {
             //passer à l'article suivant
             the_post(); ?>
             <article class="article">
@@ -46,46 +47,54 @@ $postsRealisation = get_posts(array(
                     </div>
                 </div>
             </article>
+
         <?php } //}
-        ?>
+        ?></div>
     </div>
     <div class="realisation">
-        <h2 class="titre_realisation">Réalisations</h2>
-        <h3 class="h3">Envie d’en apprendre plus sur notre travail et nos réalisations ?</h3>
-        <?php
-        foreach ($postsRealisation as $post) { ?>
-            <article class="article">
-                <header class="article__entete">
-                    <a class="article__lien" href="<?php the_permalink(); ?>"><h3
-                                class="article__titre"><?php the_title() ?></h3></a>
-                    <p><?php echo get_field("nom_client") ?></p>
-                </header>
+            <h2 class="titre_realisation">Réalisations</h2>
+            <h3 class="h3">Envie d’en apprendre plus sur notre travail et nos réalisations ?</h3>
+        <div class="wrap">
+            <?php
+            foreach ($postsRealisation as $post) { ?>
+                <div class="wrap2">
+                    <article class="article">
+                        <header class="article__entete">
+                            <a class="article__lien" href="<?php the_permalink(); ?>"><h3
+                                        class="article__titre"><?php the_title() ?></h3></a>
+                            <p><?php echo get_field("nom_client") ?></p>
+                        </header>
 
-                <div class="article__texte">
-                    <?php //affiche le texte de l'article
-                    the_content();
-                    ?>
-                </div>
-                <p class="hyperlien article__savoirplus">
-                    <a href="<?php the_permalink(); ?>">En savoir plus</a>
-                </p> </article>
-                <?php
-                $image_info = get_field("photo_1");
-                if ($image_info != null) {
-                    ?>
-                    <picture class="article__image">
-                        <!-- <source media="(min-width: 800px)" srcset="<?php echo $image_info['sizes']["medium"]; ?>"> -->
-                        <source media="(max-width: 600px)" srcset="<?php echo $image_info['sizes']["medium"]; ?>">
-                        <img src="<?php echo $image_info['sizes']['thumbnail']; ?>"
-                             alt="<?php echo $image_info["alt"]; ?>">
-                    </picture>
+                        <div class="article__texte">
+                            <?php //affiche le texte de l'article
+                            the_content();
+                            ?>
+                        </div>
+                        <div class="article__savoirplus">
+                            <a class="hyperlien" href="<?php the_permalink(); ?>">En savoir plus</a>
+                        </div>
+                    </article>
+                    <?php
+                    $image_info = get_field("photo_1");
+                    if ($image_info != null) {
+                        ?>
+                        <picture class="article__image">
+                            <!-- <source media="(min-width: 800px)" srcset="<?php echo $image_info['sizes']["medium"]; ?>"> -->
+                            <source media="(max-width: 600px)" srcset="<?php echo $image_info['sizes']["medium"]; ?>">
+                            <img src="<?php echo $image_info['sizes']['thumbnail']; ?>"
+                                 alt="<?php echo $image_info["alt"]; ?>">
+                        </picture>
+               </div>
                 <?php } ?>
 
-        <?php } ?></div>
-    <p class="hyperlien lien__realisation"><a href="">Toutes nos réalisations</a></p>
+            <?php } ?>
+        </div>
+        <div class="lien__realisation">
+            <a href="">Toutes nos réalisations</a>
+        </div>
+    </div>
 </main>
 <?php
-
 //get_sidebar();
 get_footer();
 ?>
