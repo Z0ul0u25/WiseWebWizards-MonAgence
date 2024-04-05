@@ -90,7 +90,7 @@ get_header();
             <?php } ?>
         </div>
         <div class="lien__realisation">
-            <a href="">Toutes nos réalisations</a>
+            <a href="<?php echo get_template_directory_uri()?>/nos-realisations">Toutes nos réalisations</a>
         </div>
     </div>
 </main>
