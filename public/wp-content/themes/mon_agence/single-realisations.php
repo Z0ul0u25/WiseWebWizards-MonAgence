@@ -18,7 +18,10 @@ get_header();
 		<div class="article__top gauche">
 
 			<?php $image_info = get_field("photo_1"); ?>
-			<img src="<?= $image_info['sizes']["medium"] ?>" alt="<?= $image_info["alt"]; ?>">
+			<figure>
+				<img src="<?= $image_info['sizes']["thumbnail"] ?>" alt="<?= $image_info["alt"]; ?>">
+				<figcaption><?php get_field("nom_client"); ?></figcaption>
+			</figure>
 
 			<div class="article__texte">
 				<p>
@@ -46,8 +49,7 @@ get_header();
 					//ici on utilise trois images personnalisées... Mais on peut utiliser thumbnail, medium, etc...
 					//l'attribut sizes contient tout les formats d'image nécessaire.
 			?>
-					<picture class="<?php echo($cpt%2==0)?"gauche":"droite"; ?>">
-						<source media="(min-width: 801px)" srcset="<?php echo $image_info['sizes']["large"]; ?>">
+					<picture class="<?php echo ($cpt % 2 == 0) ? "gauche" : "droite"; ?>">
 						<source media="(min-width: 401px)" srcset="<?php echo $image_info['sizes']["medium"]; ?>">
 						<img src="<?= $image_info['sizes']["thumbnail"] ?>" alt="<?= $image_info["alt"]; ?>">
 					</picture>
