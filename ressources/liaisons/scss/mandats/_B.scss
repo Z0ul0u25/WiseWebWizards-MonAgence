@@ -25,7 +25,13 @@
 		font-weight: bold;
 	}
 
+	a {
+		text-decoration: none;
+		color: $hyperlien;
+	}
+
 	#articles {
+		padding-top: 20px;
 		display        : flex;
 		flex-grow      : 1;
 		align-content  : flex-start;

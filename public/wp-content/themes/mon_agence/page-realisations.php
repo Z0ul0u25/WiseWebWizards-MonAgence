@@ -1,6 +1,7 @@
 <?php
 /*Template name: realisations */
 $pageSingle = false;
+$photoVedette = "http://localhost/rpni2/mon_agence/public/wp-content/images/lalacavaetreca.jpg";
 $titrePage = get_the_title();
 $slogan = get_the_content();
 get_header(); //Appel de l'inclusion d'entête de page
@@ -9,18 +10,6 @@ get_header(); //Appel de l'inclusion d'entête de page
 
 <main class="page b_page" id="b_hub">
 
-    <?php //var_dump($post); //Ce que reçoit la page
-    ?>
-
-    <div>
-        <h1><?php the_title() //fonction native WP
-            ?></h1>
-    </div>
-    <p>
-        <?php the_content() ?>
-        <?php  //echo $post->post_content;
-        ?>
-    </p>
     <?php
     //Requête et boucle d'affichage des articles avec ACF
     //À mettre dans les pages utilisant les articles personnalisés et adapter****************
