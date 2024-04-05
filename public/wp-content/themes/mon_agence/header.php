@@ -164,7 +164,7 @@
                                 <h2 class="entete__slogan"></h2>
                             <?php }?>
                         </div>
-                        <img class="image_vedette" src="<?php echo $photoVedette ?>" alt="">
+                        <img class="image_vedette" src="<?php echo $photoVedette ?>">
                     </div>
             <?php }?>
         </header>

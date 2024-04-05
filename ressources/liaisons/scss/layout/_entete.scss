@@ -9,11 +9,11 @@
     .wrapper{
       background-color: rgba(0 0 0 / 50%);
       box-shadow: 0 0 50px 32px rgba(0 0 0 / 50%);
+      margin-top: 120px;
     }
       &:last-of-type{
         color: white;
         .entete__titre{
-          padding-top: 120px;
           font-size: 36px;
           white-space: pre;
           margin: 0 10px;
@@ -49,20 +49,21 @@
 @media(min-width: 601px){
   .entete__principale{
     .fond{
+
       padding-bottom: 180px;
+      .wrapper{
+        margin: 120px 220px;
+      }
       div{
         &:last-of-type{
           padding-left: 10px;
             .entete__titre{
-              padding-top: 120px;
               font-size: $tableH1;
-              margin: 0 220px;
             }
             .entete__slogan{
               font-size: $paragraphe;
               padding-top: 0;
               width: 30%;
-              margin-left:220px;
           }
         }
       }
