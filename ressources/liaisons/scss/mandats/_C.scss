@@ -98,6 +98,8 @@
 
 	
 		.c_article {
+			transition: ease-out 0.3s;
+
 			max-width: 320px;
 			position: relative;
 			box-shadow: 10px 20px 2px 0px #200436;
@@ -120,6 +122,11 @@
 				border-width: 2px 3px 2px 3px;
 				border-radius: 0 0 5px 5px;
 				border-color: white;
+			}
+
+			&:hover {
+				translate : 5px 10px;
+				box-shadow: 5px 10px 2px 0px;
 			}
 		}
 	}

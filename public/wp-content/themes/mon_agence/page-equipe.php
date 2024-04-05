@@ -3,6 +3,7 @@
 $pageSingle = false;
 $titrePage = get_the_title();
 $slogan = get_the_content();
+$photoVedette = get_the_post_thumbnail();
 get_header(); //Appel de l'inclusion d'entête de page
 ?>
 
