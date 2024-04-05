@@ -49,6 +49,8 @@
 	}
 
 	article {
+		transition:ease-out 0.3s;
+
 		display         : flex;
 		flex-direction  : column;
 		justify-content : center;
@@ -62,6 +64,11 @@
 		@media(min-width: 601px) {
 			width : 405px;
 			height: auto;
+		}
+
+		&:hover{
+			translate: 10px 10px;
+			box-shadow: 10px 10px 1px 0px;
 		}
 	}
 }
