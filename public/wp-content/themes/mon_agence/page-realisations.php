@@ -77,5 +77,4 @@ get_header(); //Appel de l'inclusion d'entête de page
     <?php
     } ?>
 </main>
-<?php get_sidebar() ?>
 <?php get_footer() ?>
