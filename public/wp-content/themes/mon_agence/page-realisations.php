@@ -1,7 +1,7 @@
 <?php
 /*Template name: realisations */
 $pageSingle = false;
-$photoVedette = "http://localhost/rpni2/mon_agence/public/wp-content/images/lalacavaetreca.jpg";
+$photoVedette = get_the_post_thumbnail();
 $titrePage = get_the_title();
 $slogan = get_the_content();
 get_header(); //Appel de l'inclusion d'entête de page
