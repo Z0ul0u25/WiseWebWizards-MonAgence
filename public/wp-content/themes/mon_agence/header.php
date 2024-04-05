@@ -92,9 +92,6 @@
             <?php }
             else{?>
                 <header class="entete__principale">
-                    <div class="image_vedette">
-                        <img src="<?php echo $photoVedette ?>" alt="">
-                    </div>
                     <div class="fond">
                         <?php if (has_nav_menu("principal")) { ?>
                             <nav id="principal " class="menu__principal">
@@ -158,16 +155,16 @@
                                 </div>
                             </nav>
                         <?php } ?>
-                        <div>
+                        <div class="wrapper">
                             <h1 class="entete__titre"><?php echo $titrePage ?></h1>
                             <?php if($slogan != ""){?>
                             <h2 class="entete__slogan"><?php echo $slogan ?></h2>
                             <?php }
                             else{?>
-                                <h2></h2>
+                                <h2 class="entete__slogan"></h2>
                             <?php }?>
                         </div>
-
+                        <img class="image_vedette" src="<?php echo $photoVedette ?>" alt="">
                     </div>
             <?php }?>
         </header>
