@@ -9,7 +9,6 @@ get_header(); //Appel de l'inclusion d'entête de page
 ?>
 
 <main class="page b_page" id="b_hub">
-
     <?php
     //Requête et boucle d'affichage des articles avec ACF
     //À mettre dans les pages utilisant les articles personnalisés et adapter****************
