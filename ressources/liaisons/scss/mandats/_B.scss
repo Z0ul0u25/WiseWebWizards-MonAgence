@@ -2,21 +2,35 @@
 .b_page {
 	background  : $gradientMauve;
 	color       : #000;
-	width: initial;
+	width       : initial;
 	// max-width: 1000px;
 
 	transform: translateY(-20px);
+	padding-bottom: 64px;
+
+	.nav-links{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	.nav-previous, .nav-next{
+		a {
+			color: $hyperlien;
+			margin: 0 20px;
+		}
+	}
 }
+
 
 #b_hub {
 
-	padding-bottom: 40px;
-	@media (min-width:1080px){
-		padding-left: 10%;
+	@media (min-width:1080px) {
+		padding-left : 10%;
 		padding-right: 10%;
 	}
-	@media (min-width:1436px){
-		padding-left: 20%;
+
+	@media (min-width:1436px) {
+		padding-left : 20%;
 		padding-right: 20%;
 	}
 
@@ -25,7 +39,13 @@
 		font-weight: bold;
 	}
 
+	a {
+		text-decoration: none;
+		color          : $hyperlien;
+	}
+
 	#articles {
+		padding-top    : 20px;
 		display        : flex;
 		flex-grow      : 1;
 		align-content  : flex-start;
@@ -43,6 +63,8 @@
 	}
 
 	article {
+		transition: ease-out 0.3s;
+
 		display         : flex;
 		flex-direction  : column;
 		justify-content : center;
@@ -57,10 +79,21 @@
 			width : 405px;
 			height: auto;
 		}
+
+		&:hover {
+			translate : 10px 10px;
+			box-shadow: 10px 10px 1px 0px;
+		}
 	}
 }
 
 #b_single {
+
+	h1{
+		color: white;
+		margin: 64px 0;
+	}
+
 	.article__top {
 		display              : grid;
 		grid-template-columns: auto;
@@ -80,6 +113,10 @@
 		}
 	}
 
+	.article__texte {
+		padding: 0 10px;
+	}
+
 	.gauche {
 		align-self: flex-start;
 
@@ -88,6 +125,8 @@
 			/* La fonction repeat() ne fonctionne pas avec le sass de npm*/
 			//border-radius: 0 repeat(3, 32px);
 			border-radius: 0 32px 32px 32px;
+
+			box-shadow: 10px 10px 2px 0px $mauveSecondaire;
 		}
 	}
 
@@ -96,6 +135,7 @@
 
 		img {
 			border-radius: 32px 0 32px 32px;
+			box-shadow: -10px 10px 2px 0px $mauveSecondaire;
 		}
 	}
 }
