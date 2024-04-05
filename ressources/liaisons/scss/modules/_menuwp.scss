@@ -117,6 +117,9 @@
       opacity: 1;
       justify-content: space-between;
 
+      min-height: initial;
+      min-width: initial;
+
       &.overlay {
         background: none;
       }
