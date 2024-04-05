@@ -151,7 +151,7 @@ add_action('init', 'agence_equipe_custom_post', 0);
 //Ajout de la librairie Font Awesome pour les icons de la navigation mobile.
 function wmpudev_enqueue_icon_stylesheet()
 {
-    wp_register_style('fontawesome', 'http:////maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+    wp_register_style('fontawesome', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
     wp_enqueue_style('fontawesome');
 }
 
