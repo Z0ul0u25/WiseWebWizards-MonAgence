@@ -8,14 +8,6 @@ les portes de
 l'enchantement 
 digital.";
 get_header();
-
-$postsRealisation = get_posts(array(
-    'posts_per_page' => 2,
-    'post_type'    => 'realisations',
-    'post_status' => 'publish',
-    'orderby' => 'the_title',
-    'order' => 'ASC',
-));
 ?>
 <main class="a_page">
     <div class="nouvelles">
@@ -57,6 +49,13 @@ $postsRealisation = get_posts(array(
             <h3 class="h3">Envie d’en apprendre plus sur notre travail et nos réalisations ?</h3>
         <div class="wrap">
             <?php
+            $postsRealisation = get_posts(array(
+                'posts_per_page' => 2,
+                'post_type'    => 'realisations',
+                'post_status' => 'publish',
+                'orderby' => 'the_title',
+                'order' => 'ASC',
+            ));
             foreach ($postsRealisation as $post) { ?>
                 <div class="wrap2">
                     <article class="article">

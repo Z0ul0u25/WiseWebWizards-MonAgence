@@ -1,8 +1,8 @@
 /* Entete de page */
 .entete__principale{
-  img{
+  .image_vedette img{
     position: absolute;
-    height: 75%;
+    height: 70%;
     width: 100%;
   }
   .fond{
@@ -41,7 +41,7 @@
 
 @media(min-width: 601px){
   .entete__principale{
-    img{
+    .image_vedette img{
       height: 90%;
     }
     .fond{

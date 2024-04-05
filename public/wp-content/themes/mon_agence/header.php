@@ -92,7 +92,9 @@
             <?php }
             else{?>
                 <header class="entete__principale">
-                    <img src="<?php echo $photoVedette ?>" alt="">
+                    <div class="image_vedette">
+                        <img src="<?php echo $photoVedette ?>" alt="">
+                    </div>
                     <div class="fond">
                         <?php if (has_nav_menu("principal")) { ?>
                             <nav id="principal " class="menu__principal">
