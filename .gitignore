@@ -1,3 +1,4 @@
 /node_modules
 *.idea
 *.css*
+/public/wp-content/uploads/*
