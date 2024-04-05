@@ -39,9 +39,8 @@ get_header(); //Appel de l'inclusion d'entête de page
                             //Utiliser la balise picture pour le redimensionnement de l'image
                         ?>
                             <picture>
-                                <!-- <source media="(min-width: 800px)" srcset="<?php echo $image_info['sizes']["medium"]; ?>"> -->
                                 <source media="(min-width: 415px)" srcset="<?php echo $image_info['sizes']["medium"]; ?>">
-                                <img src="<?php echo $image_info['sizes']['thumbnail']; ?>" alt="<?php echo $image_info["alt"]; ?>">
+                                <img class="article__img" src="<?php echo $image_info['sizes']['thumbnail']; ?>" alt="<?php echo $image_info["alt"]; ?>">
                             </picture>
 
                         <?php } ?>
