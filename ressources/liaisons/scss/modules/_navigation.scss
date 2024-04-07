@@ -19,7 +19,7 @@
   .menu{
     padding-top: 60px;
     margin: 0;
-
+    list-style: none;
     .menu-item{
       padding: 10px;
       a{
@@ -33,30 +33,9 @@
         }
       }
     }
-    .fa{
-      color: white;
-      &:hover{
-        color: $mauvePrimaire;
-      }
-      &::before{
-        float: left;
-        margin-top: 0;
-        width: 25px;
-        display: block;
-      }
-      &:after{
-        color: $mauvePrimaire;
-      }
-    }
   }
   .medias-icons {
     display: none;
-    i{
-      color: white;
-      &:hover{
-        color: $mauvePrimaire;
-      }
-    }
   }
 }
 @media(min-width: 601px){
@@ -66,7 +45,6 @@
   .menu__principal{
     padding-top: 30px;
     padding-left: 85px;
-
     div{
       &:first-of-type{
         .logo{
@@ -77,6 +55,7 @@
       }
     }
     .menu{
+      display: flex;
       margin-left: 160px;
       top:0;
       padding-top: 0;
@@ -85,17 +64,11 @@
       .menu-item{
         padding-right: 70px;
       }
-      .fa{
-        &::before{
-          display: none;
-        }
-      }
     }
     .medias-icons{
       padding-right: 90px;
       padding-top: 2px;
-      display: block;
-
+      display: flex;
       svg{
         margin-left: 20px;
         a{
