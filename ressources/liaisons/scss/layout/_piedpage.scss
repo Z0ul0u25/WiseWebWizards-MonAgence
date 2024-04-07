@@ -1,7 +1,7 @@
 /*pied de page*/
 .piedDePage{
   background: $gradientMauveTransparent;
-  padding: 90px 10px 20px 10px;
+  padding: 10vh 5vh;
   .elements__princpaux{
     display: flex;
     justify-content: space-between;
@@ -55,7 +55,7 @@
 
 @media(min-width: 601px){
   .piedDePage{
-    padding: 150px 220px 30px 220px;
+    padding: 10vh 25vh 2vh 25vh;
     .elements__princpaux{
       justify-content: flex-start;
       h1{
