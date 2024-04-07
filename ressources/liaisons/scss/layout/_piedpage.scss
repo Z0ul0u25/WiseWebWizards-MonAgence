@@ -42,11 +42,12 @@
     }
     .medias-icons{
       padding-bottom: 150px;
-      i{
-        padding: 15px;
-        color: black;
+      svg{
+        margin-left: 10px;
         &:hover{
-          color: $mauvePrimaire;
+          path{
+            fill: $mauvePrimaire;
+          }
         }
       }
     }
