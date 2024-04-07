@@ -5,7 +5,7 @@
 	background: $gradientMauve;
 
 	padding-top: 40px;
-	padding-bottom: 160px;
+	padding-bottom: 80px;
 
 	.c_h2 {
 		margin-bottom: 80px;
@@ -154,11 +154,60 @@
 				box-shadow: 5px 10px 2px 0px;
 			}
 		}
-
-		.c_membresFooter {
-			margin: 100px;
-
-		}
 	}
 
+	.c_membresFooter {
+		margin-top: 80px;
+
+		.nav-links {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			gap: 32px;
+		}
+		@media (min-width:601px) {
+			.nav-links {
+				gap: 64px;
+			}
+		}
+		.nav-previous {
+			position: relative;
+
+			&::before {
+				content: "";
+				display: block;
+
+				position: absolute;
+				transform: translate(-50%, -50%) rotate(-35deg);
+				width: 25px;
+				aspect-ratio: 1/1;
+				background-image: url("../images/WizardHat.svg");
+				background-repeat: no-repeat;
+			}
+		}
+		.nav-next {
+			position: relative;
+
+			&::before {
+				content: "";
+				display: block;
+
+				position: absolute;
+				right: 0;
+				transform: translate(50%, -50%) rotate(35deg) scale(-1, 1);
+				width: 25px;
+				aspect-ratio: 1/1;
+				background-image: url("../images/WizardHat.svg");
+				background-repeat: no-repeat;
+			}
+		}
+
+		a {
+			color: white;
+			text-decoration: none;
+			font-size: 2rem;
+			text-align: center;
+		}
+
+	}
 }
