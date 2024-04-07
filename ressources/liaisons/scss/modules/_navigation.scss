@@ -95,10 +95,17 @@
       padding-right: 90px;
       padding-top: 2px;
       display: block;
-      i{
-        padding: 10px;
-      }
 
+      svg{
+        margin-left: 20px;
+        a{
+          &:hover{
+            path{
+              fill: $mauvePrimaire;
+            }
+          }
+        }
+      }
     }
   }
 }
