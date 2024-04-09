@@ -45,7 +45,7 @@
             </a>
             <nav class="navigation__secondaire">
                 <div class="informations">
-                    <p>997, 3e avenue Québec (Québec) G1L 2X2  </p>
+                    <p>997, 3e avenue Québec (Québec) G1L 2X2</p>
                     <p>418 622-6129</p>
                     <p>quebec@wisewebwizards.ca</p>
                 </div>
@@ -84,5 +84,5 @@
 </footer>
 <?php wp_footer(); ?>
 </body>
-<script src="<?php echo get_template_directory_uri()?>/liaisons/js/menuwp.js"></script>
+<script src="<?php echo get_template_directory_uri()?>/liaisons/js/menuwp.min.js"></script>
 </html>
